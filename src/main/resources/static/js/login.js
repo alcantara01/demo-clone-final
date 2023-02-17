@@ -20,9 +20,9 @@ async function iniciarSesion() {
 
   const respuesta = await request.json();
   if(respuesta == 'OK'){
-    window.location.href= 'usuarios.html'
+    window.location.href= 'usuarios.html';
   } else {
-    alert("Las credenciales son incorrectas. Por favor intentalo de nuevo");
+    alert('Las credenciales son incorrectas. Por favor intentalo de nuevo');
   }
 
 }
