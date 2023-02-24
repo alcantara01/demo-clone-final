@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
 import java.util.Date;
@@ -64,7 +63,7 @@ public class JWTUtil {
         return claims.getId();
     }
 
-    // Clases de apoyo
+
     private Key toKey(String key){
         return Keys.hmacShaKeyFor(key.getBytes(StandardCharsets.UTF_8));
     }
