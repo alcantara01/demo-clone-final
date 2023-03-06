@@ -48,19 +48,25 @@
 			<artifactId>mariadb-java-client</artifactId>
 			<version>3.0.4</version>
 		</dependency>
-		<dependency>
+		<dependency> <!-- Es una librería que genera ese código repetitivo por nosotros. -->
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		<dependency>
+		<dependency> <!-- Sirve para hacer un hash sobre la contraseña-->
 			<groupId>de.mkammerer</groupId>
 			<artifactId>argon2-jvm</artifactId>
 			<version>2.11</version>
 		</dependency>
-		<dependency>
+		<dependency>  <!-- Es un estandar abierto para la creación de Token de Acceso el cual permite firmar digitalmente
+		 información en un string para validar los privilegios e identidad de un usuario en un sistema -->
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-api</artifactId>
 			<version>0.11.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
 		</dependency>
 	</dependencies>
 	<build>
